@@ -1,0 +1,37 @@
+name: Continuous Delivery — ABAcaTEA
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  delivery:
+    name: Build & Artifact Delivery
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: 2. Configuração do Node.js (v20 LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 3. Instalação de Dependências
+        run: npm ci
+
+      - name: 4. Build de Produção
+        run: npm run build
+
+      - name: 5. Armazenamento do Artefato de Entrega
+        uses: actions/upload-artifact@v4
+        with:
+          name: abacatea-build
+          path: dist/
+          retention-days: 7
