@@ -7,6 +7,7 @@ import Team from './components/Team/Team';
 import Differentials from './components/Differentials/Differentials';
 import Testimonials from './components/Testimonials/Testimonials';
 import FAQ from './components/FAQ/FAQ';
+import Contact from './components/Contact/Contact';
 import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
 
 export function App() {
@@ -25,6 +26,7 @@ export function App() {
         <Differentials />
         <Testimonials />
         <FAQ />
+        <Contact />
       </main>
       <WhatsAppButton />
     </div>

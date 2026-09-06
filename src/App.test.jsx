@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import App from './App';
 
-describe('App Component — Integração com Módulos de Engajamento', () => {
+describe('App Component — Integração Global com Seção de Contato', () => {
   it('renderiza o skip-link acessível para navegação por teclado', () => {
     render(<App />);
     const skipLink = screen.getByRole('link', {
@@ -61,7 +61,6 @@ describe('App Component — Integração com Módulos de Engajamento', () => {
 
   it('renderiza os módulos de engajamento (Depoimentos, FAQ e WhatsApp)', () => {
     render(<App />);
-    // Depoimentos
     expect(
       screen.getByRole('heading', {
         level: 2,
@@ -69,7 +68,6 @@ describe('App Component — Integração com Módulos de Engajamento', () => {
       })
     ).toBeInTheDocument();
 
-    // FAQ
     expect(
       screen.getByRole('heading', {
         level: 2,
@@ -77,11 +75,24 @@ describe('App Component — Integração com Módulos de Engajamento', () => {
       })
     ).toBeInTheDocument();
 
-    // WhatsApp flutuante
     expect(
       screen.getByRole('link', {
         name: /fale conosco pelo whatsapp/i,
       })
+    ).toBeInTheDocument();
+  });
+
+  it('renderiza a seção de contato com formulário e canais de atendimento', () => {
+    render(<App />);
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: /estamos aqui para acolher sua família/i,
+      })
+    ).toBeInTheDocument();
+
+    expect(
+      screen.getByRole('button', { name: /enviar mensagem/i })
     ).toBeInTheDocument();
   });
 });
