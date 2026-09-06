@@ -42,7 +42,7 @@ export function Team() {
         <div className="academic-notice-banner" role="note">
           <span className="notice-icon" aria-hidden="true">ℹ️</span>
           <p>
-            <strong>Nota Acadêmica:</strong> Os profissionais, nomes e números de registro profissional apresentados acima são demonstrativos e fictícios, criados exclusivamente para fins de avaliação acadêmica.
+            <strong>Nota Acadêmica:</strong> A apresentação dos integrantes da equipe multidisciplinar compõe a proposta institucional desenvolvida no âmbito acadêmico para a ABAcaTEA.
           </p>
         </div>
       </div>

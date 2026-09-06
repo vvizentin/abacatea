@@ -1,6 +1,5 @@
 /**
- * Depoimentos demonstrativos para fins exclusivamente acadêmicos.
- * Não correspondem a pacientes ou relatos reais.
+ * Depoimentos apresentados para fins de demonstração acadêmica da ABAcaTEA.
  */
 export const testimonials = [
   {

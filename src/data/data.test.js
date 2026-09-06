@@ -22,7 +22,7 @@ describe('Dados Estáticos do Projeto ABAcaTEA', () => {
     ]);
   });
 
-  it('contém a equipe fictícia completa com 5 profissionais', () => {
+  it('contém a equipe completa com 5 profissionais', () => {
     expect(team).toHaveLength(5);
     team.forEach((member) => {
       expect(member).toHaveProperty('name');

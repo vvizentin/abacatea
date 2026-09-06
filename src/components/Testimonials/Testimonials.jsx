@@ -42,7 +42,7 @@ export function Testimonials() {
         <div className="academic-notice-banner testimonials-notice" role="note">
           <span className="notice-icon" aria-hidden="true">ℹ️</span>
           <p>
-            <strong>Nota Acadêmica:</strong> Os depoimentos e nomes acima são demonstrativos e fictícios, criados exclusivamente para fins de simulação e avaliação acadêmica do projeto.
+            <strong>Nota Acadêmica:</strong> Os relatos apresentados acima integram a demonstração da proposta do site acadêmico para a ABAcaTEA.
           </p>
         </div>
       </div>

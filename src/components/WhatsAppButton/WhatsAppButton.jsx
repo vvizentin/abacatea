@@ -1,7 +1,7 @@
 import './WhatsAppButton.css';
 
 export function WhatsAppButton() {
-  // Número fictício estabelecido no PRD: (41) 99999-9999
+  // Canal demonstrativo estabelecido no PRD: (41) 99999-9999
   const whatsappUrl =
     'https://wa.me/5541999999999?text=Ol%C3%A1%2C%20gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20na%20ABAcaTEA';
 

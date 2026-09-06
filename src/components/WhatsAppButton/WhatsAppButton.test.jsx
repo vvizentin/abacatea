@@ -3,7 +3,7 @@ import { describe, it, expect } from 'vitest';
 import WhatsAppButton from './WhatsAppButton';
 
 describe('Componente WhatsAppButton', () => {
-  it('renderiza o botão com link para o WhatsApp com número fictício', () => {
+  it('renderiza o botão com link para o WhatsApp com número demonstrativo', () => {
     render(<WhatsAppButton />);
     const link = screen.getByRole('link', {
       name: /fale conosco pelo whatsapp/i,

@@ -20,10 +20,10 @@ describe('Componente Testimonials', () => {
     expect(screen.getByText(/fernanda r\./i)).toBeInTheDocument();
   });
 
-  it('exibe a nota acadêmica explicitando que são depoimentos fictícios', () => {
+  it('exibe a nota acadêmica demonstrativa do projeto', () => {
     render(<Testimonials />);
     expect(screen.getByRole('note')).toHaveTextContent(
-      /os depoimentos e nomes acima são demonstrativos e fictícios/i
+      /os relatos apresentados acima integram a demonstração/i
     );
   });
 });

@@ -1,12 +1,12 @@
 # ABAcaTEA — Clínica Multidisciplinar Pediátrica
 
-Site institucional moderno, acolhedor e acessível da **ABAcaTEA**, uma clínica multidisciplinar pediátrica fictícia focada no desenvolvimento integral de crianças em parceria ativa com suas famílias.
+Site institucional moderno, acolhedor e acessível da **ABAcaTEA**, clínica multidisciplinar pediátrica focada no desenvolvimento integral de crianças em parceria ativa com suas famílias.
 
 ---
 
 ## 🎯 Contexto e Objetivo Acadêmico
 
-Este projeto foi desenvolvido com finalidade acadêmica para demonstrar a aplicação prática de:
+Este projeto foi desenvolvido para fins acadêmicos e tem como objetivo apresentar uma proposta de site institucional para a ABAcaTEA, clínica real. A iniciativa demonstra na prática:
 
 - **Desenvolvimento Web Moderno** com React e Vite;
 - **Arquitetura de Componentes** limpa, modular e reutilizável;
@@ -35,7 +35,7 @@ Este projeto foi desenvolvido com finalidade acadêmica para demonstrar a aplica
 3. **Sobre Nós**: Missão da clínica e os 4 pilares de atendimento (*Atendimento individualizado*, *Equipe multidisciplinar*, *Ambiente acolhedor* e *Participação da família*).
 4. **Especialidades**: Cards informativos para 6 áreas integradas: Psicologia, Fonoaudiologia, Terapia Ocupacional, Psicopedagogia, Terapia ABA e Fisioterapia.
 5. **Como Funciona**: Linha do tempo estruturada em 5 etapas da jornada clínica do paciente.
-6. **Equipe Multidisciplinar**: Apresentação dos 5 profissionais fictícios com especialidades, mini-bios e número de registro demonstrativo.
+6. **Equipe Multidisciplinar**: Apresentação dos 5 profissionais com especialidades, mini-bios e número de registro demonstrativo.
 7. **Diferenciais**: Destaques do modelo humanizado de atendimento da clínica.
 8. **Depoimentos**: Relatos acolhedores demonstrativos com aviso de simulação acadêmica.
 9. **FAQ Acessível**: Perguntas frequentes organizadas em accordion expansível via teclado com atributos `aria-expanded` e `role="region"`.
@@ -157,6 +157,6 @@ Se qualquer uma das etapas falhar, o pipeline bloqueia o fluxo de integração.
 
 ---
 
-## ⚠️ Observação Legal e Acadêmica
+## ⚠️ Observação Acadêmica
 
-A **ABAcaTEA**, seu nome, profissionais, especialidades, endereços, números de telefone, registros profissionais (CRP, CRFa, CREFITO, ABPp) e depoimentos apresentados neste projeto são **fictícios** e foram concebidos exclusivamente para fins acadêmicos e demonstrativos de desenvolvimento web e DevOps.
+A **ABAcaTEA** é uma clínica real. Este repositório e o desenvolvimento deste site possuem finalidade exclusivamente acadêmica, servindo como proposta de site institucional para demonstração prática de desenvolvimento web, testes e DevOps.

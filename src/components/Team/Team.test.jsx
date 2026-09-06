@@ -13,7 +13,7 @@ describe('Componente Team', () => {
     ).toBeInTheDocument();
   });
 
-  it('renderiza os 5 profissionais fictícios estipulados no PRD', () => {
+  it('renderiza os 5 profissionais estipulados no PRD', () => {
     render(<Team />);
     const expectedMembers = [
       'Dra. Mariana Alves',

@@ -131,7 +131,7 @@ export function Footer() {
             &copy; 2026 ABAcaTEA. Projeto acadêmico demonstrativo.
           </p>
           <p className="footer-disclaimer">
-            Desenvolvido para fins de avaliação acadêmica sobre desenvolvimento web, Git, testes automatizados e CI/CD. Informações, profissionais e contatos são fictícios.
+            Desenvolvido para fins de avaliação acadêmica sobre desenvolvimento web, Git, testes automatizados e CI/CD. Projeto acadêmico.
           </p>
         </div>
       </div>

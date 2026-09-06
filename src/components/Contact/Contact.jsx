@@ -146,7 +146,7 @@ export function Contact() {
 
             <div className="contact-academic-badge">
               <span>Projeto Acadêmico Demonstrativo</span>
-              <p>Os canais acima são fictícios e utilizados exclusivamente para simulação.</p>
+              <p>O envio através deste formulário é simulado para fins de demonstração acadêmica.</p>
             </div>
           </aside>
 
