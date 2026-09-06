@@ -1,0 +1,87 @@
+:root {
+  /* Paleta de Cores Oficial ABAcaTEA */
+  --color-primary: #6C63A8;
+  --color-primary-hover: #564E8E;
+  --color-primary-light: #8B83C6;
+  --color-primary-subtle: #F0EEF8;
+
+  --color-secondary: #8CC7C5;
+  --color-secondary-hover: #6EB2B0;
+  --color-secondary-subtle: #E8F6F6;
+
+  --color-background: #F8F7FC;
+  --color-surface: #FFFFFF;
+
+  --color-text: #292735;
+  --color-text-muted: #5E5B70;
+  --color-text-light: #8E8BA0;
+
+  --color-accent: #F2B880;
+  --color-accent-hover: #E09E5E;
+  --color-accent-subtle: #FEF4EC;
+
+  --color-border: #E6E3F0;
+  --color-border-subtle: #F0EEF7;
+
+  --color-success: #2E8540;
+  --color-success-bg: #EAF6ED;
+  --color-error: #D32F2F;
+  --color-error-bg: #FDE8E8;
+
+  /* Tipografia */
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2.25rem;    /* 36px */
+  --font-size-5xl: 3rem;       /* 48px */
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.7;
+
+  /* Espaçamento */
+  --spacing-1: 0.25rem;   /* 4px */
+  --spacing-2: 0.5rem;    /* 8px */
+  --spacing-3: 0.75rem;   /* 12px */
+  --spacing-4: 1rem;      /* 16px */
+  --spacing-5: 1.25rem;   /* 20px */
+  --spacing-6: 1.5rem;    /* 24px */
+  --spacing-8: 2rem;      /* 32px */
+  --spacing-10: 2.5rem;   /* 40px */
+  --spacing-12: 3rem;     /* 48px */
+  --spacing-16: 4rem;     /* 64px */
+  --spacing-20: 5rem;     /* 80px */
+
+  /* Bordas e Raios */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Sombras Suaves */
+  --shadow-sm: 0 1px 3px rgba(41, 39, 53, 0.05), 0 1px 2px rgba(41, 39, 53, 0.03);
+  --shadow-md: 0 4px 12px rgba(41, 39, 53, 0.06), 0 2px 4px rgba(41, 39, 53, 0.04);
+  --shadow-lg: 0 12px 28px rgba(41, 39, 53, 0.08), 0 4px 8px rgba(41, 39, 53, 0.04);
+
+  /* Transições */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+
+  /* Container */
+  --container-max-width: 1200px;
+  --container-padding: 1.5rem;
+}
