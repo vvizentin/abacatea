@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import App from './App';
 
-describe('App Component — Integração Global com Seção de Contato', () => {
+describe('App Component — Integração Global, Landmarks e Acessibilidade', () => {
   it('renderiza o skip-link acessível para navegação por teclado', () => {
     render(<App />);
     const skipLink = screen.getByRole('link', {
@@ -10,6 +10,16 @@ describe('App Component — Integração Global com Seção de Contato', () => {
     });
     expect(skipLink).toBeInTheDocument();
     expect(skipLink).toHaveAttribute('href', '#main-content');
+  });
+
+  it('possui landmarks semânticos essenciais (header, main, footer, aside)', () => {
+    render(<App />);
+    expect(screen.getByRole('banner')).toBeInTheDocument();
+    expect(screen.getByRole('main')).toHaveAttribute('id', 'main-content');
+    expect(screen.getByRole('contentinfo')).toBeInTheDocument();
+    expect(
+      screen.getByRole('complementary', { name: /contato rápido via whatsapp/i })
+    ).toBeInTheDocument();
   });
 
   it('renderiza a Navbar e o Hero com títulos oficiais', () => {
@@ -25,7 +35,7 @@ describe('App Component — Integração Global com Seção de Contato', () => {
     ).toBeInTheDocument();
   });
 
-  it('renderiza todas as seções institucionais', () => {
+  it('renderiza todas as seções institucionais com hierarquia h2 correta', () => {
     render(<App />);
     expect(
       screen.getByRole('heading', {
@@ -59,7 +69,7 @@ describe('App Component — Integração Global com Seção de Contato', () => {
     ).toBeInTheDocument();
   });
 
-  it('renderiza os módulos de engajamento (Depoimentos, FAQ e WhatsApp)', () => {
+  it('renderiza os módulos de engajamento, contato e rodapé institucional', () => {
     render(<App />);
     expect(
       screen.getByRole('heading', {
@@ -76,15 +86,6 @@ describe('App Component — Integração Global com Seção de Contato', () => {
     ).toBeInTheDocument();
 
     expect(
-      screen.getByRole('link', {
-        name: /fale conosco pelo whatsapp/i,
-      })
-    ).toBeInTheDocument();
-  });
-
-  it('renderiza a seção de contato com formulário e canais de atendimento', () => {
-    render(<App />);
-    expect(
       screen.getByRole('heading', {
         level: 2,
         name: /estamos aqui para acolher sua família/i,
@@ -92,7 +93,7 @@ describe('App Component — Integração Global com Seção de Contato', () => {
     ).toBeInTheDocument();
 
     expect(
-      screen.getByRole('button', { name: /enviar mensagem/i })
+      screen.getByText(/© 2026 abacatea\. projeto acadêmico demonstrativo\./i)
     ).toBeInTheDocument();
   });
 });

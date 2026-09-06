@@ -26,7 +26,7 @@ export function Testimonials() {
               <blockquote className="testimonial-text">
                 <p>&ldquo;{item.text}&rdquo;</p>
               </blockquote>
-              <footer className="testimonial-author-wrapper">
+              <div className="testimonial-author-wrapper">
                 <div className="author-avatar" aria-hidden="true">
                   <span>{item.author[0]}</span>
                 </div>
@@ -34,7 +34,7 @@ export function Testimonials() {
                   <cite className="author-name">{item.author}</cite>
                   <span className="author-role">{item.role}</span>
                 </div>
-              </footer>
+              </div>
             </article>
           ))}
         </div>
