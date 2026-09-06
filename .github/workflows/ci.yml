@@ -1,0 +1,37 @@
+name: CI Pipeline — ABAcaTEA
+
+on:
+  push:
+    branches:
+      - main
+      - develop
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    name: Build, Lint & Automated Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 1. Checkout do Repositório
+        uses: actions/checkout@v4
+
+      - name: 2. Configuração do Node.js (v20 LTS)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 3. Instalação de Dependências
+        run: npm ci
+
+      - name: 4. Verificação de Lint
+        run: npm run lint
+
+      - name: 5. Execução dos Testes Automatizados
+        run: npm test
+
+      - name: 6. Build de Produção
+        run: npm run build
