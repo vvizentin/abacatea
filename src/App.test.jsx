@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { describe, it, expect } from 'vitest';
 import App from './App';
 
-describe('App Component — Integração Global de Conteúdo Institucional', () => {
+describe('App Component — Integração com Módulos de Engajamento', () => {
   it('renderiza o skip-link acessível para navegação por teclado', () => {
     render(<App />);
     const skipLink = screen.getByRole('link', {
@@ -12,19 +12,11 @@ describe('App Component — Integração Global de Conteúdo Institucional', () 
     expect(skipLink).toHaveAttribute('href', '#main-content');
   });
 
-  it('renderiza a Navbar e seus links de navegação', () => {
+  it('renderiza a Navbar e o Hero com títulos oficiais', () => {
     render(<App />);
     expect(
       screen.getByRole('navigation', { name: /navegação principal/i })
     ).toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /sobre nós/i })).toBeInTheDocument();
-    expect(
-      screen.getByRole('link', { name: /especialidades/i })
-    ).toBeInTheDocument();
-  });
-
-  it('renderiza a seção Hero com o título oficial do PRD', () => {
-    render(<App />);
     expect(
       screen.getByRole('heading', {
         level: 1,
@@ -33,45 +25,62 @@ describe('App Component — Integração Global de Conteúdo Institucional', () 
     ).toBeInTheDocument();
   });
 
-  it('renderiza as seções institucionais com seus respectivos cabeçalhos', () => {
+  it('renderiza todas as seções institucionais', () => {
     render(<App />);
-    // Sobre nós
     expect(
       screen.getByRole('heading', {
         level: 2,
         name: /cuidado multidisciplinar para cada criança/i,
       })
     ).toBeInTheDocument();
-
-    // Especialidades
     expect(
       screen.getByRole('heading', {
         level: 2,
         name: /áreas de atendimento integradas/i,
       })
     ).toBeInTheDocument();
-
-    // Como funciona
     expect(
       screen.getByRole('heading', {
         level: 2,
         name: /como funciona o cuidado na abacatea/i,
       })
     ).toBeInTheDocument();
-
-    // Equipe
     expect(
       screen.getByRole('heading', {
         level: 2,
         name: /profissionais dedicados ao desenvolvimento infantil/i,
       })
     ).toBeInTheDocument();
-
-    // Diferenciais
     expect(
       screen.getByRole('heading', {
         level: 2,
         name: /por que confiar o desenvolvimento na abacatea/i,
+      })
+    ).toBeInTheDocument();
+  });
+
+  it('renderiza os módulos de engajamento (Depoimentos, FAQ e WhatsApp)', () => {
+    render(<App />);
+    // Depoimentos
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: /relatos de carinho e evolução/i,
+      })
+    ).toBeInTheDocument();
+
+    // FAQ
+    expect(
+      screen.getByRole('heading', {
+        level: 2,
+        name: /perguntas frequentes sobre o atendimento/i,
+      })
+    ).toBeInTheDocument();
+
+    // WhatsApp flutuante
+    expect(
+      screen.getByRole('link', {
+        name: /fale conosco pelo whatsapp/i,
       })
     ).toBeInTheDocument();
   });

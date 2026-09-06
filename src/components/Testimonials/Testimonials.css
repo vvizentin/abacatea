@@ -1,0 +1,110 @@
+.testimonials-section {
+  background-color: var(--color-background);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-8);
+  margin-bottom: var(--spacing-12);
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-8);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  position: relative;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-primary-light);
+}
+
+.testimonial-quote-icon {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--color-primary);
+  opacity: 0.25;
+  margin-bottom: -1rem;
+}
+
+.testimonial-text {
+  flex-grow: 1;
+  margin-bottom: var(--spacing-6);
+}
+
+.testimonial-text p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-relaxed);
+  font-style: italic;
+  color: var(--color-text);
+}
+
+.testimonial-author-wrapper {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding-top: var(--spacing-4);
+  border-top: 1px solid var(--color-border-subtle);
+}
+
+.author-avatar {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background-color: var(--color-primary-subtle);
+  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-base);
+  flex-shrink: 0;
+}
+
+.author-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-name {
+  font-style: normal;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+}
+
+.author-role {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+}
+
+.testimonials-notice {
+  margin-top: var(--spacing-4);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-6);
+  }
+}
+
+@media (max-width: 640px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-4);
+  }
+
+  .testimonial-card {
+    padding: var(--spacing-6);
+  }
+}

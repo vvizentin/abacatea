@@ -5,6 +5,9 @@ import Specialties from './components/Specialties/Specialties';
 import HowItWorks from './components/HowItWorks/HowItWorks';
 import Team from './components/Team/Team';
 import Differentials from './components/Differentials/Differentials';
+import Testimonials from './components/Testimonials/Testimonials';
+import FAQ from './components/FAQ/FAQ';
+import WhatsAppButton from './components/WhatsAppButton/WhatsAppButton';
 
 export function App() {
   return (
@@ -20,7 +23,10 @@ export function App() {
         <HowItWorks />
         <Team />
         <Differentials />
+        <Testimonials />
+        <FAQ />
       </main>
+      <WhatsAppButton />
     </div>
   );
 }
