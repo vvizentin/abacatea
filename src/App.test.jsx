@@ -29,4 +29,9 @@ describe('App', () => {
       screen.getByLabelText('Fale com nossa equipe de triagem pelo WhatsApp')
     ).toBeDefined();
   });
+
+  it('renders the footer', () => {
+    render(<App />);
+    expect(screen.getByRole('contentinfo')).toBeDefined();
+  });
 });
